@@ -21,6 +21,12 @@ public class ItemInit {
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
+        //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
+
+        //blocks
+        //block items
+        //armor
+        //tools
     }
 }
