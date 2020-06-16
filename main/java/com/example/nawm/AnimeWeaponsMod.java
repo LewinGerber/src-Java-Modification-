@@ -19,6 +19,7 @@ public class AnimeWeaponsMod {
     public static AnimeWeaponsMod instance;
 
     public AnimeWeaponsMod() {
+        //HELLO WORLD
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff);
 
