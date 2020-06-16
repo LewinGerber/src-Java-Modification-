@@ -11,7 +11,7 @@ import net.minecraftforge.registries.ObjectHolder;
 
 /**
  * @author Lewin Gerber, Elias Mehran & Simon Tobler
- * @version 15.06.2020
+ * @version 16.06.2020
  * (n)AWM
  */
 
