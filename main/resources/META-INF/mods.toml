@@ -1,0 +1,50 @@
+modLoader="javafml"
+
+loaderVersion="[31,)"
+
+issueTrackerURL="http://my.issue.tracker/"
+
+[[mods]]
+
+modId="nawm"
+
+version="0.1" #mandatory
+
+displayName="(non Anime Weapons Mod)"
+
+updateJSONURL="http://myurl.me/"
+
+displayURL="http://example.com"
+
+# A file name (in the root of the mod JAR) containing a logo for display
+logoFile=""
+
+credits="We definitely knew what the f*ck we were doing."
+
+authors=""
+
+description='''
+    This is the (non) Anime Weapons mod. Definitely not random and definitely not created by
+    developers who don't know what the f*ck they're doing.
+'''
+
+
+
+[[dependencies.nawm]] #optional
+    # the modid of the dependency
+    modId="forge" #mandatory
+    # Does this dependency have to exist - if not, ordering below must be specified
+    mandatory=true #mandatory
+    # The version range of the dependency
+    versionRange="[31,)" #mandatory
+    # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+    ordering="NONE"
+    # Side this dependency is applied on - BOTH, CLIENT or SERVER
+    side="BOTH"
+
+[[dependencies.nawm]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.15.2]"
+    ordering="NONE"
+    side="BOTH"
