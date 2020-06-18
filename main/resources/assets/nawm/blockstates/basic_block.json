@@ -1,5 +1,5 @@
 {
   "variants": {
-      "": { "model":  "nawm:block/basic_block" }
+    "": { "model": "nawm:block/basic_block" }
   }
 }
