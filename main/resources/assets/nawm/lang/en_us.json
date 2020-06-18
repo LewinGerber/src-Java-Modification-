@@ -1,5 +1,6 @@
 {
   "item.nawm.basic_item": "Basic Item",
+  "item.nawm.adventure_sword": "Adventure",
 
-  "item.nawm.adventure_sword": "Adventure"
+  "block.nawm.example_block": "Basic Block"
 }
