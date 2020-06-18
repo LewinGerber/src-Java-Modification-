@@ -5,6 +5,7 @@ import com.example.nawm.objects.blocks.BasicBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -27,6 +28,6 @@ public class BlockInit {
 
     @SubscribeEvent
     public static void registerBlockItems(final RegistryEvent.Register<Item> event){
-        event.getRegistry().register(new BlockItem(basic_block, new Item.Properties()).setRegistryName("basic_block"));
+        event.getRegistry().register(new BlockItem(basic_block, new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName("basic_block"));
     }
 }
