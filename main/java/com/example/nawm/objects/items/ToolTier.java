@@ -14,10 +14,6 @@ import java.util.function.Supplier;
  */
 public class ToolTier {
 
-    public AdventureSword() {
-        super();
-    }
-
     public enum AdventureTier implements IItemTier {
         ADVENTURE(4, 2000, 15.0F, 7.0F, 420, () -> {
             return Ingredient.fromItems(ItemInit.basic_item);
