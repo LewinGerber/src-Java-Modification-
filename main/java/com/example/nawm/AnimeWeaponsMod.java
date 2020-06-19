@@ -47,7 +47,7 @@ public class AnimeWeaponsMod {
 
     public static class AnimeItemGroup extends ItemGroup {
 
-        public static final AnimeItemGroup instance = new AnimeItemGroup(ItemGroup.GROUPS.length, "(n)AWM");
+        public static final AnimeItemGroup instance = new AnimeItemGroup(ItemGroup.GROUPS.length, "nAWM");
 
         private AnimeItemGroup(int index, String label) {
             super(index, label);
