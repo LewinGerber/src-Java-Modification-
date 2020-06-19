@@ -26,7 +26,6 @@ public class ItemInit {
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
-
         //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
 
@@ -36,7 +35,6 @@ public class ItemInit {
         event.getRegistry().register(new SwordItem(ToolTier.AdventureTier.ADVENTURE, 7, 5.0F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("adventure_sword"));
 
         //food
-
 
     }
 }
