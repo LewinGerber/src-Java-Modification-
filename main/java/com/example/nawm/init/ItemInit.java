@@ -1,6 +1,7 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
+import com.example.nawm.objects.items.AdventureSword;
 import com.example.nawm.objects.items.BasicItem;
 import com.example.nawm.objects.items.ToolTier;
 import net.minecraft.item.Item;
@@ -32,7 +33,7 @@ public class ItemInit {
         //armor
 
         //tools
-        event.getRegistry().register(new SwordItem(ToolTier.AdventureTier.ADVENTURE, 7, 5.0F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("adventure_sword"));
+        event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
 
         //food
 
