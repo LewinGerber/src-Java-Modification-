@@ -1,11 +1,11 @@
 package com.example.nawm.objects.items;
 
+import com.example.nawm.AnimeWeaponsMod;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.SwordItem;
 
-public class AdventureSword extends SwordItem{
+public class AdventureSword extends SwordItem {
     public AdventureSword() {
-        super(ToolTier.AdventureTier.ADVENTURE, 7, 5.0F, new Item.Properties().group(ItemGroup.COMBAT));
+        super(ToolTier.AdventureTier.ADVENTURE, 7, 5.0F, new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 }
