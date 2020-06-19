@@ -4,6 +4,7 @@ import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.objects.items.AdventureSword;
 import com.example.nawm.objects.items.BasicItem;
 import com.example.nawm.objects.items.IceCastle;
+import com.example.nawm.objects.items.MagicMushroom;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -23,6 +24,7 @@ public class ItemInit {
     public static final Item basic_item = null;
     public static final Item ice_castle_item = null;
     public static final Item adventure_sword = null;
+    public static final Item magic_mushroom = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -36,6 +38,8 @@ public class ItemInit {
         event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
 
         //food
+        event.getRegistry().register(new MagicMushroom.setRegistryName("magic_mushroom"));
+
 
     }
 }
