@@ -5,7 +5,10 @@ import com.example.nawm.objects.items.AdventureSword;
 import com.example.nawm.objects.items.BasicItem;
 import com.example.nawm.objects.items.IceCastle;
 import com.example.nawm.objects.items.MagicMushroom;
+import net.minecraft.item.Food;
 import net.minecraft.item.Item;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -38,8 +41,7 @@ public class ItemInit {
         event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
 
         //food
-        event.getRegistry().register(new MagicMushroom.setRegistryName("magic_mushroom"));
-
+        event.getRegistry().register(new MagicMushroom().setRegistryName("magic_mushroom"));
 
     }
 }
