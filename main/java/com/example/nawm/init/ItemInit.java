@@ -30,14 +30,7 @@ public class ItemInit {
         //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
 
-        //blocks
-
-
-        //block items
-
-
         //armor
-
 
         //tools
         event.getRegistry().register(new SwordItem(ToolTier.AdventureTier.ADVENTURE, 7, 5.0F, new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("adventure_sword"));
