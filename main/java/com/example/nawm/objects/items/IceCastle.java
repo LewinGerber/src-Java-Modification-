@@ -28,12 +28,12 @@ public class IceCastle extends Item {
         double posY = playerIn.getPosY();
         double posZ = playerIn.getPosZ();
 
-        worldIn.setBlockState(new BlockPos(posX, posY,posZ), Blocks.PACKED_ICE.getDefaultState());
+        worldIn.setBlockState(new BlockPos(posX, posY, posZ), Blocks.PACKED_ICE.getDefaultState());
         //cross shape
-        worldIn.setBlockState(new BlockPos(posX+1, posY,posZ), Blocks.PACKED_ICE.getDefaultState());
-        worldIn.setBlockState(new BlockPos(posX-1, posY,posZ), Blocks.PACKED_ICE.getDefaultState());
-        worldIn.setBlockState(new BlockPos(posX, posY,posZ+1), Blocks.PACKED_ICE.getDefaultState());
-        worldIn.setBlockState(new BlockPos(posX, posY,posZ-1), Blocks.PACKED_ICE.getDefaultState());
+        worldIn.setBlockState(new BlockPos(posX + 1, posY, posZ), Blocks.PACKED_ICE.getDefaultState());
+        worldIn.setBlockState(new BlockPos(posX - 1, posY, posZ), Blocks.PACKED_ICE.getDefaultState());
+        worldIn.setBlockState(new BlockPos(posX, posY, posZ + 1), Blocks.PACKED_ICE.getDefaultState());
+        worldIn.setBlockState(new BlockPos(posX, posY, posZ - 1), Blocks.PACKED_ICE.getDefaultState());
 
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }

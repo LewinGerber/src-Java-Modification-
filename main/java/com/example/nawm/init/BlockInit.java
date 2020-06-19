@@ -23,13 +23,13 @@ public class BlockInit {
 
     //blocks
     @SubscribeEvent
-    public static void registerBlock(final RegistryEvent.Register<Block> event){
+    public static void registerBlock(final RegistryEvent.Register<Block> event) {
         event.getRegistry().register(new BasicBlock().setRegistryName("basic_block"));
     }
 
     //block item -> don't put values into different Class since there isn't much variation
     @SubscribeEvent
-    public static void registerBlockItems(final RegistryEvent.Register<Item> event){
+    public static void registerBlockItems(final RegistryEvent.Register<Item> event) {
         event.getRegistry().register(new BlockItem(basic_block, new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName("basic_block"));
     }
 }
