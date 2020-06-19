@@ -12,7 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
 
 /**
- * @author Lewin Gerber
+ * @author Lewin Gerber, Simon Tobler
  * @version 18.06.2020
  * nAWM
  */
