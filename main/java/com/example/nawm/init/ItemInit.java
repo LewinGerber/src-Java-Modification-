@@ -3,6 +3,7 @@ package com.example.nawm.init;
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.objects.items.AdventureSword;
 import com.example.nawm.objects.items.BasicItem;
+import com.example.nawm.objects.items.IceCastle;
 import com.example.nawm.objects.items.ToolTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -23,12 +24,14 @@ import net.minecraftforge.registries.ObjectHolder;
 public class ItemInit {
 
     public static final Item basic_item = null;
+    public static final Item ice_castle_item = null;
     public static final Item adventure_sword = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
+        event.getRegistry().register(new IceCastle().setRegistryName("ice_castle_item"));
 
         //armor
 
