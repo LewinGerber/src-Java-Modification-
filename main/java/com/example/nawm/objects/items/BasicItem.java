@@ -15,7 +15,8 @@ import net.minecraft.world.World;
  */
 public class BasicItem extends Item {
     public BasicItem() {
-        super(new Item.Properties().group(ItemGroup.MISC).xc);
+        //Hello World
+        super(new Item.Properties().group(ItemGroup.MISC));
     }
 
     @Override
