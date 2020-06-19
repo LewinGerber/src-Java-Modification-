@@ -21,14 +21,14 @@ import net.minecraftforge.registries.ObjectHolder;
 public class ItemInit {
 
     public static final Item basic_item = null;
-    public static final Item ice_castle_item = null;
+    public static final Item ice_castle = null;
     public static final Item adventure_sword = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
-        event.getRegistry().register(new IceCastle().setRegistryName("ice_castle_item"));
+        event.getRegistry().register(new IceCastle().setRegistryName("ice_castle"));
 
         //armor
 
