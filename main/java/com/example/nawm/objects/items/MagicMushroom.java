@@ -1,5 +1,6 @@
 package com.example.nawm.objects.items;
 
+import com.example.nawm.AnimeWeaponsMod;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
@@ -21,7 +22,7 @@ import static net.minecraft.potion.Effects.ABSORPTION;
 public class MagicMushroom  {
     public MagicMushroom() {
         //Hello World 2.0
-        super(new Item.Properties().group(ItemGroup.instance).food(new Builder().hunger(10).saturation(1.2f).meat().
+        super(new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance).food(new Builder().hunger(10).saturation(1.2f).meat().
                 effect(new EffectInstance(ABSORPTION, 6000,5))));
     }
 }
