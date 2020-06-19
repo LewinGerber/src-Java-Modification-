@@ -1,8 +1,8 @@
 package com.example.nawm.objects.items;
 
+import com.example.nawm.AnimeWeaponsMod;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
@@ -16,7 +16,7 @@ import net.minecraft.world.World;
 public class BasicItem extends Item {
     public BasicItem() {
         //Hello World 2.0
-        super(new Item.Properties().group(ItemGroup.MISC));
+        super(new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 
     @Override
