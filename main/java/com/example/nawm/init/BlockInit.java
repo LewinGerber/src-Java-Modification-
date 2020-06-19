@@ -21,11 +21,13 @@ import net.minecraftforge.registries.ObjectHolder;
 public class BlockInit {
     public static final Block basic_block = null;
 
+    //blocks
     @SubscribeEvent
     public static void registerBlock(final RegistryEvent.Register<Block> event){
         event.getRegistry().register(new BasicBlock().setRegistryName("basic_block"));
     }
 
+    //block item -> don't put values into different Class since there isn't much variation
     @SubscribeEvent
     public static void registerBlockItems(final RegistryEvent.Register<Item> event){
         event.getRegistry().register(new BlockItem(basic_block, new Item.Properties().group(ItemGroup.MATERIALS)).setRegistryName("basic_block"));
