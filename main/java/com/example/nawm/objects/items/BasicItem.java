@@ -8,6 +8,8 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
+import java.util.function.Consumer;
+
 /**
  * @author Lewin Gerber
  * @version 14.06.2020
@@ -16,12 +18,14 @@ import net.minecraft.world.World;
 public class BasicItem extends Item {
     public BasicItem() {
         //Hello World 2.0
-        super(new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
+        super(new Item.Properties().maxDamage(100).group(AnimeWeaponsMod.AnimeItemGroup.instance));
+
     }
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         playerIn.jump();
+        playerIn.getHeldItem(handIn).damageItem(10, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }
 }
