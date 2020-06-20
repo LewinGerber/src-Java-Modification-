@@ -1,8 +1,11 @@
 {
   "item.nawm.basic_item": "Basic Item",
+
   "item.nawm.adventure_sword": "Adventure",
   "item.nawm.ice_castle": "Ice Castle",
   "item.nawm.magic_mushroom": "OneUp Shroom",
 
-  "block.nawm.basic_block": "Basic Block"
+  "block.nawm.basic_block": "Basic Block",
+
+  "itemGroup.nAWM": "(n)AWM"
 }

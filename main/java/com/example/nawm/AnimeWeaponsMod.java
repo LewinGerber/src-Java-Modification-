@@ -1,6 +1,7 @@
 package com.example.nawm;
 
 import com.example.nawm.init.ItemInit;
+import com.example.nawm.init.ModEntityTypes;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,6 +28,8 @@ public class AnimeWeaponsMod {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
+
+        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
