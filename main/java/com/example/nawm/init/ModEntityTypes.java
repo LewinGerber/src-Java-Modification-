@@ -15,8 +15,7 @@ public class ModEntityTypes {
 
     public static final RegistryObject<EntityType<Raccoon>> RACCOON = ENTITY_TYPES
             .register("raccoon",
-                    () -> EntityType.Builder
-                            .<Raccoon>create(Raccoon::new, EntityClassification.CREATURE)
+                    () -> EntityType.Builder.<Raccoon>create(Raccoon::new, EntityClassification.CREATURE)
                             .size(0.6f, 0.85f)
                             .build(new ResourceLocation(AnimeWeaponsMod.MOD_ID, "raccoon").toString())
             );
