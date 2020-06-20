@@ -32,12 +32,11 @@ public class Raccoon extends AnimalEntity {
 
         this.goalSelector.addGoal(0, new SwimGoal(this));
         this.goalSelector.addGoal(1, new BreedGoal(this, 1.0D));
-        this.targetSelector.addGoal(2, (new HurtByTargetGoal(this)).setCallsForHelp());
-        this.goalSelector.addGoal(3, new LeapAtTargetGoal(this, 0.4F));
-        this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.0D, true));
-        this.goalSelector.addGoal(5, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
-        this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, 8.0F));
-        this.goalSelector.addGoal(7, new LookRandomlyGoal(this));
+        this.goalSelector.addGoal(2, new PanicGoal(this, 2.0D));
+        this.goalSelector.addGoal(3, new FollowParentGoal(this, 1.0D));
+        this.goalSelector.addGoal(4, new WaterAvoidingRandomWalkingGoal(this, 1.0D));
+        this.goalSelector.addGoal(5, new LookAtGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
     }
 
     @Override
