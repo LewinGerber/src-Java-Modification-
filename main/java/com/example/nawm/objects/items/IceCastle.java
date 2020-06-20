@@ -1,5 +1,6 @@
 package com.example.nawm.objects.items;
 
+import com.example.nawm.AnimeWeaponsMod;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.player.PlayerEntity;
@@ -26,7 +27,7 @@ import java.util.Random;
 
 public class IceCastle extends Item {
     public IceCastle() {
-        super(new Properties().group(ItemGroup.TRANSPORTATION).maxStackSize(1));
+        super(new Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance).maxStackSize(1));
     }
 
     @Override
