@@ -34,6 +34,6 @@ public class Bolt extends Enchantment {
 
     @Override
     public int calcModifierDamage(int level, DamageSource source) {
-        return super.calcModifierDamage(0, DamageSource.LIGHTNING_BOLT);
+        return super.calcModifierDamage(1, DamageSource.LIGHTNING_BOLT);
     }
 }
