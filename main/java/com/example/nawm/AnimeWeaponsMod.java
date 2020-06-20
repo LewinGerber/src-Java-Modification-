@@ -1,5 +1,6 @@
 package com.example.nawm;
 
+import com.example.nawm.init.EnchantmentInit;
 import com.example.nawm.init.ItemInit;
 import com.example.nawm.init.ModEntityTypes;
 import net.minecraft.item.ItemGroup;
@@ -29,6 +30,7 @@ public class AnimeWeaponsMod {
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
 
+        EnchantmentInit.ENCHANTMENTS.register(modEventBus);
         ModEntityTypes.ENTITY_TYPES.register(modEventBus);
 
         instance = this;

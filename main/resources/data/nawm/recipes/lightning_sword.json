@@ -10,7 +10,7 @@
   {
     "x":
     {
-      "item": "nawm:basic_item"
+      "item": "nawm:thunder"
     },
     "s":
     {
@@ -19,7 +19,7 @@
   },
   "result":
   {
-    "item": "nawm:adventure_sword",
+    "item": "nawm:lightning_sword",
     "count": 1
   }
 }
