@@ -17,7 +17,7 @@ import java.util.List;
 
 public class Thunder extends Item {
     public Thunder() {
-        super(new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
+        super(new Item.Properties().maxDamage(100).group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 
     @Override
@@ -38,6 +38,7 @@ public class Thunder extends Item {
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
         worldIn.setThunderStrength(1.0f);
+        playerIn.getHeldItem(handIn).damageItem(4, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }
 }

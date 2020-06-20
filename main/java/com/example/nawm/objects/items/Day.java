@@ -15,9 +15,9 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class Rain extends Item {
-    public Rain() {
-        super(new Item.Properties().maxDamage(130).group(AnimeWeaponsMod.AnimeItemGroup.instance));
+public class Day extends Item{
+    public Day() {
+        super(new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 
     @Override
@@ -28,7 +28,7 @@ public class Rain extends Item {
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         if(KeyboardHelper.isHoldingShift()) {
-            tooltip.add(new StringTextComponent("Make your tears visible for once"));
+            tooltip.add(new StringTextComponent("Show them your WRATH!"));
         } else {
             tooltip.add(new StringTextComponent("Hold" + "\u00A7e" + " SHIFT " + "\u00A77" + "for more information"));
         }
@@ -37,7 +37,7 @@ public class Rain extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        worldIn.setRainStrength(1.0f);
+        worldIn.setDayTime(1000);
         playerIn.getHeldItem(handIn).damageItem(8, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }

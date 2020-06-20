@@ -28,6 +28,8 @@ public class ItemInit {
     public static final Item thunder = null;
     public static final Item rain = null;
     public static final Item wind = null;
+    public static final Item day = null;
+    public static final Item night = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -36,6 +38,9 @@ public class ItemInit {
         event.getRegistry().register(new IceCastle().setRegistryName("ice_castle"));
         event.getRegistry().register(new Thunder().setRegistryName("thunder"));
         event.getRegistry().register(new Rain().setRegistryName("rain"));
+        event.getRegistry().register(new Wind().setRegistryName("wind"));
+        event.getRegistry().register(new Day().setRegistryName("day"));
+        event.getRegistry().register(new Night().setRegistryName("night"));
 
         //armor
 
