@@ -8,7 +8,7 @@ import net.minecraft.util.DamageSource;
 
 public class Bolt extends Enchantment {
 
-    public Bolt(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType[] slots) {
+    public Bolt(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType... slots) {
         super(rarityIn, typeIn, slots);
     }
 
