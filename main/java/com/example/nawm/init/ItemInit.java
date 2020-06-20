@@ -1,10 +1,7 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
-import com.example.nawm.objects.items.AdventureSword;
-import com.example.nawm.objects.items.BasicItem;
-import com.example.nawm.objects.items.IceCastle;
-import com.example.nawm.objects.items.MagicMushroom;
+import com.example.nawm.objects.items.*;
 import net.minecraft.item.Food;
 import net.minecraft.item.Item;
 import net.minecraft.potion.EffectInstance;
@@ -28,12 +25,22 @@ public class ItemInit {
     public static final Item ice_castle = null;
     public static final Item adventure_sword = null;
     public static final Item magic_mushroom = null;
+    public static final Item thunder = null;
+    public static final Item rain = null;
+    public static final Item wind = null;
+    public static final Item day = null;
+    public static final Item night = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
         //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
         event.getRegistry().register(new IceCastle().setRegistryName("ice_castle"));
+        event.getRegistry().register(new Thunder().setRegistryName("thunder"));
+        event.getRegistry().register(new Rain().setRegistryName("rain"));
+        event.getRegistry().register(new Wind().setRegistryName("wind"));
+        event.getRegistry().register(new Day().setRegistryName("day"));
+        event.getRegistry().register(new Night().setRegistryName("night"));
 
         //armor
 
