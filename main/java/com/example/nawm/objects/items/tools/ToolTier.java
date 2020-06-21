@@ -1,4 +1,4 @@
-package com.example.nawm.objects.items;
+package com.example.nawm.objects.items.tools;
 
 import com.example.nawm.init.ItemInit;
 import net.minecraft.item.IItemTier;

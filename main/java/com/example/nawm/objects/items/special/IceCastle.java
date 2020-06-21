@@ -1,4 +1,4 @@
-package com.example.nawm.objects.items;
+package com.example.nawm.objects.items.special;
 
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.util.helpers.KeyboardHelper;

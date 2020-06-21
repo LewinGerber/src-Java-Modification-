@@ -2,10 +2,11 @@ package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.objects.items.*;
-import net.minecraft.item.Food;
+import com.example.nawm.objects.items.foods.MagicMushroom;
+import com.example.nawm.objects.items.special.*;
+import com.example.nawm.objects.items.tools.AdventureSword;
+import com.example.nawm.objects.items.tools.LightningSword;
 import net.minecraft.item.Item;
-import net.minecraft.potion.EffectInstance;
-import net.minecraft.potion.Effects;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

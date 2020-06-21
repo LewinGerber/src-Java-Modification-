@@ -1,4 +1,4 @@
-package com.example.nawm.objects.items;
+package com.example.nawm.objects.items.special;
 
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.util.helpers.KeyboardHelper;
@@ -15,9 +15,9 @@ import net.minecraft.world.World;
 import javax.annotation.Nullable;
 import java.util.List;
 
-public class Night extends Item {
-    public Night() {
-        super(new Item.Properties().maxDamage(80).group(AnimeWeaponsMod.AnimeItemGroup.instance));
+public class Day extends Item{
+    public Day() {
+        super(new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 
     @Override
@@ -37,8 +37,8 @@ public class Night extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        worldIn.setDayTime(13000);
-        playerIn.getHeldItem(handIn).damageItem(5, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
+        worldIn.setDayTime(1000);
+        playerIn.getHeldItem(handIn).damageItem(8, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
         return super.onItemRightClick(worldIn, playerIn, handIn);
     }
 }
