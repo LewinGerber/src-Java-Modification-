@@ -32,6 +32,10 @@ public class ItemInit {
     public static final Item wind = null;
     public static final Item day = null;
     public static final Item night = null;
+    public static final Item azure_helmet = null;
+    public static final Item azure_chestplate = null;
+    public static final Item azure_leggings = null;
+    public static final Item azure_boots = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
