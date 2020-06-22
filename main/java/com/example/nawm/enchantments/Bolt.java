@@ -2,11 +2,16 @@ package com.example.nawm.enchantments;
 
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.LightningBoltEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.DamageSource;
+import net.minecraft.world.World;
 
 public class Bolt extends Enchantment {
+
+    private LightningBoltEntity lightning;
 
     public Bolt(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType... slots) {
         super(rarityIn, typeIn, slots);
@@ -33,7 +38,7 @@ public class Bolt extends Enchantment {
     }
 
     @Override
-    public int calcModifierDamage(int level, DamageSource source) {
-        return super.calcModifierDamage(1, DamageSource.LIGHTNING_BOLT);
+    public void onEntityDamaged(LivingEntity user, Entity target, int level) {
+        target.onStruckByLightning(lightning);
     }
 }
