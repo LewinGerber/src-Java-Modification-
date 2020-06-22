@@ -1,7 +1,6 @@
 package com.example.nawm.objects.items.tools;
 
 import com.example.nawm.AnimeWeaponsMod;
-import com.example.nawm.objects.items.tools.ToolTier;
 import net.minecraft.item.Item;
 import net.minecraft.item.SwordItem;
 

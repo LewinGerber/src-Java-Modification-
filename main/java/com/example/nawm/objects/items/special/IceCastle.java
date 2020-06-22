@@ -1,30 +1,14 @@
 package com.example.nawm.objects.items.special;
 
 import com.example.nawm.AnimeWeaponsMod;
-import com.example.nawm.util.helpers.KeyboardHelper;
-import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.network.PacketBuffer;
-import net.minecraft.particles.IParticleData;
-import net.minecraft.particles.ItemParticleData;
-import net.minecraft.particles.ParticleType;
-import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
-
-import javax.annotation.Nullable;
-import java.util.List;
-
-import java.util.Random;
 
 /**
  * @author Lewin Gerber
