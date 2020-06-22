@@ -26,15 +26,17 @@ import java.util.List;
  */
 public class MagicMushroom extends Item{
 
+    //macht, dass das item immer glüht, als wäre es verzaubert
     @Override
     public boolean hasEffect(ItemStack stack) {
         return true;
     }
 
+    // wenn man shift drückt, zeigt es informationen über das item an
     @Override
     public void addInformation(ItemStack stack, @Nullable World worldIn, List<ITextComponent> tooltip, ITooltipFlag flagIn) {
         if(KeyboardHelper.isHoldingShift()) {
-            tooltip.add(new StringTextComponent("Gives 10 extra HP"));
+            tooltip.add(new StringTextComponent("Feeling lucky today?"));
         } else {
             tooltip.add(new StringTextComponent("Hold" + "\u00A7e" + " SHIFT " + "\u00A77" + "for more information"));
         }
@@ -43,9 +45,9 @@ public class MagicMushroom extends Item{
 
     public MagicMushroom() {
         super(new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance).food(new Food.Builder().hunger(6)
-                .saturation(1.2f).setAlwaysEdible().effect(new EffectInstance(Effects.ABSORPTION, 4500, 4), 1)
-                .effect(new EffectInstance(Effects.JUMP_BOOST,4500,4),1)
-                .effect(new EffectInstance(Effects.SPEED,4500,4),1).build()));
+                .saturation(1.2f).setAlwaysEdible()
+                .effect(new EffectInstance(Effects.ABSORPTION, 4500, 4), 0.999999999999999999999999999999999f)
+                .effect(new EffectInstance(Effects.WITHER,4500,4),0.1f).build()));
         //Hello World 2.0
         ;
     }
