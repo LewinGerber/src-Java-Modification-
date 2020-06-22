@@ -60,7 +60,7 @@ public class AnimeWeaponsMod {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ItemInit.basic_item);
+            return new ItemStack(ItemInit.azure);
         }
     }
 }
