@@ -44,7 +44,7 @@ public class ItemInit {
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
-        //items
+        //itemss
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
         event.getRegistry().register(new IceCastle().setRegistryName("ice_castle"));
         event.getRegistry().register(new Thunder().setRegistryName("thunder"));
