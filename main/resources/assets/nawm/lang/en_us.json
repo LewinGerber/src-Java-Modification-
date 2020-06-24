@@ -9,6 +9,11 @@
   "item.nawm.wind": "Wind",
   "item.nawm.day": "Sun",
   "item.nawm.night": "Shadow",
+  "item.nawm.azure": "Azure",
+  "item.nawm.azure_helmet": "Azure Helmet",
+  "item.nawm.azure_chestplate": "Azure Chestplate",
+  "item.nawm.azure_leggings": "Azure Leggings",
+  "item.nawm.azure_boots": "Azure Boots",
 
   "enchantment.nawm.thunder": "Bolt",
   "enchantment.nawm.amaterasu": "Amaterasu",
