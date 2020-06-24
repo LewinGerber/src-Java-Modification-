@@ -1,6 +1,7 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
+import com.example.nawm.enchantments.Amaterasu;
 import com.example.nawm.enchantments.Bolt;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
@@ -15,5 +16,10 @@ public class EnchantmentInit {
     public static final RegistryObject<Enchantment> BOLT = ENCHANTMENTS.register("thunder",
             () -> new Bolt(Enchantment.Rarity.VERY_RARE, EnchantmentType.WEAPON,
                     new EquipmentSlotType[]{EquipmentSlotType.MAINHAND})
+    );
+
+    public static final RegistryObject<Enchantment> AMATERASU = ENCHANTMENTS.register("amaterasu",
+            () -> new Amaterasu(Enchantment.Rarity.VERY_RARE,EnchantmentType.CROSSBOW,
+                    new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND})
     );
 }
