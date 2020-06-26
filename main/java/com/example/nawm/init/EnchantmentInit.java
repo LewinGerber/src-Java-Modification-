@@ -13,7 +13,13 @@ public class EnchantmentInit {
     public static final DeferredRegister<Enchantment> ENCHANTMENTS = new DeferredRegister<>(ForgeRegistries.ENCHANTMENTS, AnimeWeaponsMod.MOD_ID);
 
     public static final RegistryObject<Enchantment> AMATERASU = ENCHANTMENTS.register("amaterasu",
-            () -> new Amaterasu(Enchantment.Rarity.VERY_RARE,EnchantmentType.CROSSBOW,
+            () -> new Amaterasu(Enchantment.Rarity.VERY_RARE, EnchantmentType.CROSSBOW,
                     new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND})
     );
+
+    public static final RegistryObject<Enchantment> LIFE_STEAL = ENCHANTMENTS.register("life_steal",
+            () -> new Amaterasu(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(ItemInit.scythe)),
+                    new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND})
+    );
+
 }

@@ -9,6 +9,7 @@ import com.example.nawm.objects.items.foods.MagicMushroom;
 import com.example.nawm.objects.items.material.Azure;
 import com.example.nawm.objects.items.special.*;
 import com.example.nawm.objects.items.tools.AdventureSword;
+import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -28,6 +29,7 @@ public class ItemInit {
     public static final Item basic_item = null;
     public static final Item ice_castle = null;
     public static final Item adventure_sword = null;
+    public static final Item scythe = null;
     public static final Item magic_mushroom = null;
     public static final Item thunder = null;
     public static final Item rain = null;
@@ -42,7 +44,8 @@ public class ItemInit {
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
-        //itemss
+
+        //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
         event.getRegistry().register(new IceCastle().setRegistryName("ice_castle"));
         event.getRegistry().register(new Thunder().setRegistryName("thunder"));
@@ -60,6 +63,7 @@ public class ItemInit {
 
         //tools
         event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
+        event.getRegistry().register(new Scythe().setRegistryName("scythe"));
 
         //food
         event.getRegistry().register(new MagicMushroom().setRegistryName("magic_mushroom"));

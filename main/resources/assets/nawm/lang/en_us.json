@@ -1,6 +1,7 @@
 {
   "item.nawm.basic_item": "Basic Item",
   "item.nawm.adventure_sword": "Adventure",
+  "item.nawm.scythe": "Scythe",
   "item.nawm.ice_castle": "Ice Castle",
   "item.nawm.magic_mushroom": "OneUp Shroom",
   "item.nawm.thunder": "Thunder",
@@ -14,7 +15,7 @@
   "item.nawm.azure_leggings": "Azure Leggings",
   "item.nawm.azure_boots": "Azure Boots",
 
-  "enchantment.nawm.thunder": "Bolt",
+  "enchantment.nawm.life_steal": "Reaper",
   "enchantment.nawm.amaterasu": "Amaterasu",
 
   "itemGroup.nAWM": "(n)AWM"
