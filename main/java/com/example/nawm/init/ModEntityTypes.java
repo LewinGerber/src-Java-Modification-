@@ -1,13 +1,17 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
+import com.example.nawm.entities.ExplosiveArrow;
 import com.example.nawm.entities.Raccoon;
 import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.EntityType;
+import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+
+import java.rmi.registry.Registry;
 
 public class ModEntityTypes {
 
