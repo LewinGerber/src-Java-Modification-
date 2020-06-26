@@ -2,7 +2,6 @@ package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.enchantments.Amaterasu;
-import com.example.nawm.enchantments.Bolt;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.inventory.EquipmentSlotType;
