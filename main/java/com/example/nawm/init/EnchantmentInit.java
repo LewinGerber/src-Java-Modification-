@@ -13,11 +13,6 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class EnchantmentInit {
     public static final DeferredRegister<Enchantment> ENCHANTMENTS = new DeferredRegister<>(ForgeRegistries.ENCHANTMENTS, AnimeWeaponsMod.MOD_ID);
 
-    public static final RegistryObject<Enchantment> BOLT = ENCHANTMENTS.register("thunder",
-            () -> new Bolt(Enchantment.Rarity.VERY_RARE, EnchantmentType.WEAPON,
-                    new EquipmentSlotType[]{EquipmentSlotType.MAINHAND})
-    );
-
     public static final RegistryObject<Enchantment> AMATERASU = ENCHANTMENTS.register("amaterasu",
             () -> new Amaterasu(Enchantment.Rarity.VERY_RARE,EnchantmentType.CROSSBOW,
                     new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND})
