@@ -5,12 +5,19 @@ import com.example.nawm.objects.items.*;
 import com.example.nawm.objects.items.foods.MagicMushroom;
 import com.example.nawm.objects.items.special.*;
 import com.example.nawm.objects.items.tools.AdventureSword;
+import com.example.nawm.objects.items.tools.AmaterasuBow;
 import com.example.nawm.objects.items.tools.LightningSword;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.ObjectHolder;
+
+import java.util.Locale;
+import java.util.Properties;
 
 /**
  * @author Lewin Gerber, Elias Mehran, Simon Tobler
@@ -36,6 +43,7 @@ public class ItemInit {
     public static final Item azure_chestplate = null;
     public static final Item azure_leggings = null;
     public static final Item azure_boots = null;
+    public static final Item amaterasu_bow = null;
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
@@ -53,6 +61,7 @@ public class ItemInit {
         //tools
         event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
         event.getRegistry().register(new LightningSword().setRegistryName("lightning_sword"));
+        event.getRegistry().register(new AmaterasuBow(new Item.Properties().group(ItemGroup.COMBAT)).setRegistryName("amaterasu_bow"));
 
         //food
         event.getRegistry().register(new MagicMushroom().setRegistryName("magic_mushroom"));
