@@ -23,6 +23,6 @@ public class LifeSteal extends Enchantment {
 
     @Override
     public void onEntityDamaged(LivingEntity user, Entity target, int level) {
-        user.getHealth();
+        user.setHealth(user.getHealth() + 1.0f);
     }
 }
