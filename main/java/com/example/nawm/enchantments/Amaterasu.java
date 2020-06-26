@@ -43,7 +43,6 @@ public class Amaterasu extends Enchantment {
         LivingEntity e = (LivingEntity)target;
         e.addPotionEffect(new EffectInstance(Effects.WITHER,4500,5));
         e.setFire(1000);
-
     }
 
 }

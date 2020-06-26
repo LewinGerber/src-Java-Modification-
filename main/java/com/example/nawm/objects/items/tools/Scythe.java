@@ -6,6 +6,6 @@ import net.minecraft.item.SwordItem;
 
 public class Scythe extends SwordItem {
     public Scythe() {
-        super(ToolTier.AdventureTier.ADVENTURE, 7, 5.0F, new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
+        super(ToolTier.AdventureTier.ADVENTURE, 7, 3.0F, new Item.Properties().group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 }
