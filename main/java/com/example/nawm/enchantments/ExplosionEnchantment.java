@@ -52,6 +52,20 @@ public class ExplosionEnchantment extends Enchantment {
     }
 
     //GETTER & SETTER
+
+    /**
+     * Returns the minimal value of enchantability needed on the enchantment level passed.
+     */
+    @Override
+    public int getMinEnchantability(int enchantmentLevel) {
+        return 10 + enchantmentLevel * 5;
+    }
+
+    @Override
+    public int getMaxEnchantability(int enchantmentLevel) {
+        return this.getMinEnchantability(enchantmentLevel) + 10;
+    }
+
     @Override
     public int getMaxLevel() {
         return MAX_LVL;
