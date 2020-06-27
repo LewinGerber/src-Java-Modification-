@@ -17,6 +17,8 @@ import net.minecraft.world.World;
  */
 
 public class ExplosionEnchantment extends Enchantment {
+    private static final int MIN_LVL = 1;
+    private static final int MAX_LVL = 3;
 
     public ExplosionEnchantment () {
         super(
@@ -26,16 +28,37 @@ public class ExplosionEnchantment extends Enchantment {
                 );
     }
 
+    /*
+        Creates an explosion as soon as the weapon hits an entity
+    */
     @Override
     public void onEntityDamaged(LivingEntity user, Entity target, int level) {
         super.onEntityDamaged(user, target, level);
         World world = target.getEntityWorld();
-        world.createExplosion(target, target.getPosX(), target.getPosY(), target.getPosZ(), 3, Explosion.Mode.NONE);
+        //determine the type of explosion
+        Explosion.Mode explosionMode = null;
+        switch (level) {
+            case 1:
+                explosionMode = Explosion.Mode.NONE;
+                break;
+            case 2:
+                explosionMode = Explosion.Mode.BREAK;
+                break;
+            case 3:
+                explosionMode = Explosion.Mode.DESTROY;
+                break;
+        }
+        world.createExplosion(target, target.getPosX(), target.getPosY(), target.getPosZ(), level*2, explosionMode);
+    }
+
+    //GETTER & SETTER
+    @Override
+    public int getMaxLevel() {
+        return MAX_LVL;
     }
 
     @Override
-    public void onUserHurt(LivingEntity user, Entity attacker, int level) {
-        super.onUserHurt(user, attacker, level);
-        attacker.setSwimming(true);
+    public int getMinLevel() {
+        return MIN_LVL;
     }
 }
