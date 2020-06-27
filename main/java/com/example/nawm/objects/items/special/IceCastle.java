@@ -23,7 +23,7 @@ public class IceCastle extends Item {
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        playerIn.getHeldItem(handIn).damageItem(11, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
+        playerIn.getHeldItem(handIn).damageItem(1, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
         double posX = playerIn.getPosX();
         double posY = playerIn.getPosY();
         double posZ = playerIn.getPosZ();
