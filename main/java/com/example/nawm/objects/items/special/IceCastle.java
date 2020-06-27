@@ -18,12 +18,12 @@ import net.minecraft.world.World;
 
 public class IceCastle extends Item {
     public IceCastle() {
-        super(new Properties().maxDamage(100).group(AnimeWeaponsMod.AnimeItemGroup.instance).maxStackSize(1));
+        super(new Properties().maxDamage(10).group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 
     @Override
     public ActionResult<ItemStack> onItemRightClick(World worldIn, PlayerEntity playerIn, Hand handIn) {
-        playerIn.getHeldItem(handIn).damageItem(10, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
+        playerIn.getHeldItem(handIn).damageItem(11, playerIn, (entity) -> entity.sendBreakAnimation(handIn));
         double posX = playerIn.getPosX();
         double posY = playerIn.getPosY();
         double posZ = playerIn.getPosZ();
