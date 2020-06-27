@@ -20,8 +20,7 @@ public class EnchantmentInit {
     );
 
     public static final RegistryObject<Enchantment> EXPLOSION = ENCHANTMENTS.register("explosion",
-            () -> new ExplosionEnchantment(Enchantment.Rarity.VERY_RARE,EnchantmentType.CROSSBOW,
-                    new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND})
+            () -> new ExplosionEnchantment()
     );
 
     public static final RegistryObject<Enchantment> LIFE_STEAL = ENCHANTMENTS.register("life_steal",

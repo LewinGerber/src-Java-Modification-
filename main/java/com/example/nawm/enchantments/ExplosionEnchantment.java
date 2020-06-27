@@ -15,9 +15,15 @@ import net.minecraft.world.World;
  * @version 26.06.2020
  * nAWM
  */
+
 public class ExplosionEnchantment extends Enchantment {
-    public ExplosionEnchantment (Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType[] slots) {
-        super(rarityIn, typeIn, slots);
+
+    public ExplosionEnchantment () {
+        super(
+                Rarity.COMMON,
+                EnchantmentType.WEAPON,
+                new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND}
+                );
     }
 
     @Override
