@@ -3,6 +3,7 @@ package com.example.nawm;
 import com.example.nawm.init.EnchantmentInit;
 import com.example.nawm.init.ItemInit;
 import com.example.nawm.init.ModEntityTypes;
+import com.example.nawm.init.SoundInit;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -30,6 +31,7 @@ public class AnimeWeaponsMod {
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
 
+        SoundInit.SOUNDS.register(modEventBus);
         EnchantmentInit.ENCHANTMENTS.register(modEventBus);
         ModEntityTypes.ENTITY_TYPES.register(modEventBus);
 

@@ -1,5 +1,6 @@
 package com.example.nawm.entities.kappa_creeper;
 
+import com.example.nawm.init.SoundInit;
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.effect.LightningBoltEntity;
@@ -15,10 +16,7 @@ import net.minecraft.network.datasync.DataParameter;
 import net.minecraft.network.datasync.DataSerializers;
 import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.potion.EffectInstance;
-import net.minecraft.util.DamageSource;
-import net.minecraft.util.Hand;
-import net.minecraft.util.SoundEvent;
-import net.minecraft.util.SoundEvents;
+import net.minecraft.util.*;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
@@ -46,9 +44,11 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
     private int fuseTime = 30;
     private int explosionRadius = 3;
     private int droppedSkulls;
+    private World world;
 
     public KappaCreeperEntity(EntityType<KappaCreeperEntity> type, World worldIn) {
         super(type, worldIn);
+        this.world = worldIn;
     }
 
     protected void registerGoals() {
@@ -233,16 +233,11 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
      * Creates an explosion as determined by this creeper's power and explosion radius.
      */
     private void explode() {
-        /*if (!this.world.isRemote) {
-            Explosion.Mode explosion$mode = net.minecraftforge.event.ForgeEventFactory.getMobGriefingEvent(this.world, this) ? Explosion.Mode.DESTROY : Explosion.Mode.NONE;
-            float f = this.isCharged() ? 2.0F : 1.0F;
-            this.dead = true;
-            this.world.createExplosion(this, this.getPosX(), this.getPosY(), this.getPosZ(), (float)this.explosionRadius * f, explosion$mode);
-            this.remove();
-            this.spawnLingeringCloud();
-        }*/
-        System.out.println("explode");
-
+        world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), this.getPoofSound(), SoundCategory.HOSTILE, 0.4F, 0.4F, true);
+        world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), this.getKappaSound(), SoundCategory.HOSTILE, 0.4F, 0.4F, true);
+        world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), this.getKappaSound(), SoundCategory.HOSTILE, 0.4F, 0.4F, true);
+        this.dead = true;
+        this.remove();
     }
 
     private void spawnLingeringCloud() {
@@ -283,5 +278,16 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
 
     public void incrementDroppedSkulls() {
         ++this.droppedSkulls;
+    }
+
+    /*
+        Special sounds for the KappaCreeper Entity
+    */
+    protected SoundEvent getKappaSound() {
+        return SoundInit.KAPPA.get();
+    }
+
+    protected SoundEvent getPoofSound() {
+        return SoundInit.POOF.get();
     }
 }
