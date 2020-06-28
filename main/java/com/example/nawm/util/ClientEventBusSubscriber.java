@@ -1,6 +1,7 @@
 package com.example.nawm.util;
 
 import com.example.nawm.AnimeWeaponsMod;
+import com.example.nawm.client.render.kappa_creeper_render.KappaCreeperRender;
 import com.example.nawm.client.render.RaccoonRender;
 import com.example.nawm.init.ModEntityTypes;
 import net.minecraftforge.api.distmarker.Dist;
@@ -15,5 +16,6 @@ public class ClientEventBusSubscriber {
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.RACCOON.get(), RaccoonRender::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.KAPPA_CREEPER.get(), KappaCreeperRender::new);
     }
 }
