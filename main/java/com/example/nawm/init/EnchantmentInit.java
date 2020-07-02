@@ -7,7 +7,6 @@ import com.example.nawm.enchantments.LifeSteal;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.Items;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -25,7 +24,7 @@ public class EnchantmentInit {
     );
 
     public static final RegistryObject<Enchantment> LIFE_STEAL = ENCHANTMENTS.register("life_steal",
-            () -> new LifeSteal(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(Items.DIAMOND_SWORD)),
+            () -> new LifeSteal(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(ItemInit.scythe)),
                     new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND})
     );
 
