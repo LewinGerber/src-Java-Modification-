@@ -56,7 +56,7 @@ public class ItemInit {
         event.getRegistry().register(new Day().setRegistryName("day"));
         event.getRegistry().register(new Night().setRegistryName("night"));
         event.getRegistry().register(new Azure().setRegistryName("azure"));
-        event.getRegistry().register(new KappaCreeperSpawnEgg().setRegistryName("kappa_creeper_spawn_egg"));
+        //event.getRegistry().register(new KappaCreeperSpawnEgg().setRegistryName("kappa_creeper_spawn_egg"));
 
         //armor
         event.getRegistry().register(new AzureHelmet().setRegistryName("azure_helmet"));
