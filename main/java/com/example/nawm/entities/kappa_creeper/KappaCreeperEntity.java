@@ -52,13 +52,13 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
     }
 
     protected void registerGoals() {
-        this.goalSelector.addGoal(1, new SwimGoal(this));
+        this.goalSelector.addGoal(3, new SwimGoal(this));
         this.goalSelector.addGoal(2, new KappaCreeperSwellGoal(this));
-        this.goalSelector.addGoal(3, new AvoidEntityGoal<>(this, OcelotEntity.class, 6.0F, 1.0D, 1.2D));
-        this.goalSelector.addGoal(3, new AvoidEntityGoal<>(this, CatEntity.class, 6.0F, 1.0D, 1.2D));
-        this.goalSelector.addGoal(4, new MeleeAttackGoal(this, 1.0D, false));
-        this.goalSelector.addGoal(5, new WaterAvoidingRandomWalkingGoal(this, 0.8D));
-        this.goalSelector.addGoal(6, new LookAtGoal(this, PlayerEntity.class, 8.0F));
+        this.goalSelector.addGoal(5, new AvoidEntityGoal<>(this, OcelotEntity.class, 6.0F, 1.0D, 1.2D));
+        this.goalSelector.addGoal(5, new AvoidEntityGoal<>(this, CatEntity.class, 6.0F, 1.0D, 1.2D));
+        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.5D, false));
+        this.goalSelector.addGoal(4, new WaterAvoidingRandomWalkingGoal(this, 0.8D));
+        this.goalSelector.addGoal(2, new LookAtGoal(this, PlayerEntity.class, 10.0F));
         this.goalSelector.addGoal(6, new LookRandomlyGoal(this));
         this.targetSelector.addGoal(1, new NearestAttackableTargetGoal<>(this, PlayerEntity.class, true));
         this.targetSelector.addGoal(2, new HurtByTargetGoal(this));
@@ -233,9 +233,7 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
      * Creates an explosion as determined by this creeper's power and explosion radius.
      */
     private void explode() {
-        world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), this.getPoofSound(), SoundCategory.HOSTILE, 0.4F, 0.4F, true);
-        world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), this.getKappaSound(), SoundCategory.HOSTILE, 0.4F, 0.4F, true);
-        world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), this.getKappaSound(), SoundCategory.HOSTILE, 0.4F, 0.4F, true);
+        world.playSound(this.getPosX(), this.getPosY(), this.getPosZ(), this.getKappaSound(), SoundCategory.HOSTILE, 2.0F, 1.0F, true);
         this.dead = true;
         this.remove();
     }
