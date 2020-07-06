@@ -20,9 +20,9 @@ import java.util.function.Predicate;
  * @version 26.06.2020
  */
 public class AmaterasuBow extends BowItem {
-
-    public AmaterasuBow(Item.Properties builder) {
-        super(builder);
+    // muss sound effekt von amaterasu einfügen
+    public AmaterasuBow() {
+        super(new Item.Properties().maxDamage(8).group(AnimeWeaponsMod.AnimeItemGroup.instance));
     }
 
 }

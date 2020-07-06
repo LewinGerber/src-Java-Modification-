@@ -10,8 +10,10 @@ import com.example.nawm.objects.items.foods.MagicMushroom;
 import com.example.nawm.objects.items.material.Azure;
 import com.example.nawm.objects.items.special.*;
 import com.example.nawm.objects.items.tools.AdventureSword;
+import com.example.nawm.objects.items.tools.AmaterasuBow;
 import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -65,6 +67,8 @@ public class ItemInit {
         //tools
         event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
         event.getRegistry().register(new Scythe().setRegistryName("scythe"));
+        event.getRegistry().register(new AmaterasuBow().setRegistryName("amaterasu_bow"));
+
 
         //food
         event.getRegistry().register(new MagicMushroom().setRegistryName("magic_mushroom"));
