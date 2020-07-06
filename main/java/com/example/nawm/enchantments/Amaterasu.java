@@ -41,9 +41,10 @@ public class Amaterasu extends Enchantment {
     @Override
     public void onEntityDamaged(LivingEntity user, Entity target, int level) {
         LivingEntity e = (LivingEntity)target;
-        e.addPotionEffect(new EffectInstance(Effects.WITHER,4500,5));
+        e.addPotionEffect(new EffectInstance(Effects.WITHER,45000,5));
         target.setFire(1000);
         target.isImmuneToFire();
+
     }
 
 }

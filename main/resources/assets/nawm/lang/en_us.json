@@ -2,6 +2,8 @@
   "item.nawm.basic_item": "Basic Item",
   "item.nawm.adventure_sword": "Adventure",
   "item.nawm.scythe": "Scythe",
+  "item.nawm.lightning_sword": "Lightning Sword",
+  "item.nawm.amaterasu_bow": "Amaterasu Bow",
   "item.nawm.ice_castle": "Ice Castle",
   "item.nawm.magic_mushroom": "OneUp Shroom",
   "item.nawm.thunder": "Thunder",
@@ -9,17 +11,9 @@
   "item.nawm.wind": "Wind",
   "item.nawm.day": "Sun",
   "item.nawm.night": "Shadow",
-  "item.nawm.azure": "Azure",
-  "item.nawm.azure_helmet": "Azure Helmet",
-  "item.nawm.azure_chestplate": "Azure Chestplate",
-  "item.nawm.azure_leggings": "Azure Leggings",
-  "item.nawm.azure_boots": "Azure Boots",
 
-  "enchantment.nawm.life_steal": "Reaper",
+  "enchantment.nawm.thunder": "Bolt",
   "enchantment.nawm.amaterasu": "Amaterasu",
-  "enchantment.nawm.explosion": "Explosion",
-
-  "entity.nawm.kappa_creeper": "Kappa Creeper",
 
   "itemGroup.nAWM": "(n)AWM"
 }

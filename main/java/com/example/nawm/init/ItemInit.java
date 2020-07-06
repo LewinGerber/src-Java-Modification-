@@ -1,18 +1,18 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
-import com.example.nawm.entities.kappa_creeper.KappaCreeperEntity;
-import com.example.nawm.objects.items.armor.azure.AzureBoots;
-import com.example.nawm.objects.items.armor.azure.AzureChestplate;
-import com.example.nawm.objects.items.armor.azure.AzureHelmet;
-import com.example.nawm.objects.items.armor.azure.AzureLeggings;
+import com.example.nawm.objects.items.*;
 import com.example.nawm.objects.items.foods.MagicMushroom;
-import com.example.nawm.objects.items.material.Azure;
 import com.example.nawm.objects.items.special.*;
 import com.example.nawm.objects.items.tools.AdventureSword;
 import com.example.nawm.objects.items.tools.Scythe;
+import com.example.nawm.objects.items.tools.AmaterasuBow;
+import com.example.nawm.objects.items.tools.LightningSword;
+import net.minecraft.item.BowItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.SpawnEggItem;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -31,14 +31,13 @@ public class ItemInit {
     public static final Item basic_item = null;
     public static final Item ice_castle = null;
     public static final Item adventure_sword = null;
-    public static final Item scythe = null;
+    public static final Item lightning_sword = null;
     public static final Item magic_mushroom = null;
     public static final Item thunder = null;
     public static final Item rain = null;
     public static final Item wind = null;
     public static final Item day = null;
     public static final Item night = null;
-    public static final Item azure = null;
     public static final Item azure_helmet = null;
     public static final Item azure_chestplate = null;
     public static final Item azure_leggings = null;
@@ -46,7 +45,6 @@ public class ItemInit {
 
     @SubscribeEvent
     public static void registerItems(final RegistryEvent.Register<Item> event) {
-
         //items
         event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
         event.getRegistry().register(new IceCastle().setRegistryName("ice_castle"));
@@ -55,18 +53,12 @@ public class ItemInit {
         event.getRegistry().register(new Wind().setRegistryName("wind"));
         event.getRegistry().register(new Day().setRegistryName("day"));
         event.getRegistry().register(new Night().setRegistryName("night"));
-        event.getRegistry().register(new Azure().setRegistryName("azure"));
-        //event.getRegistry().register(new KappaCreeperSpawnEgg().setRegistryName("kappa_creeper_spawn_egg"));
 
         //armor
-        event.getRegistry().register(new AzureHelmet().setRegistryName("azure_helmet"));
-        event.getRegistry().register(new AzureChestplate().setRegistryName("azure_chestplate"));
-        event.getRegistry().register(new AzureLeggings().setRegistryName("azure_leggings"));
-        event.getRegistry().register(new AzureBoots().setRegistryName("azure_boots"));
 
         //tools
         event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
-        event.getRegistry().register(new Scythe().setRegistryName("scythe"));
+        event.getRegistry().register(new LightningSword().setRegistryName("lightning_sword"));
 
         //food
         event.getRegistry().register(new MagicMushroom().setRegistryName("magic_mushroom"));
