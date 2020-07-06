@@ -12,7 +12,6 @@ import com.example.nawm.objects.items.special.*;
 import com.example.nawm.objects.items.tools.AdventureSword;
 import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.item.Item;
-import net.minecraft.item.SpawnEggItem;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -57,7 +56,6 @@ public class ItemInit {
         event.getRegistry().register(new Night().setRegistryName("night"));
         event.getRegistry().register(new Azure().setRegistryName("azure"));
         //event.getRegistry().register(new KappaCreeperSpawnEgg().setRegistryName("kappa_creeper_spawn_egg"));
-
         //armor
         event.getRegistry().register(new AzureHelmet().setRegistryName("azure_helmet"));
         event.getRegistry().register(new AzureChestplate().setRegistryName("azure_chestplate"));
