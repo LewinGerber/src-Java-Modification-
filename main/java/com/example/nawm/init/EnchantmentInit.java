@@ -2,10 +2,8 @@ package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.enchantments.Amaterasu;
-//import com.example.nawm.enchantments.Bolt;
 import com.example.nawm.enchantments.ExplosionEnchantment;
 import com.example.nawm.enchantments.LifeSteal;
-import com.example.nawm.objects.items.tools.AmaterasuBow;
 import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;

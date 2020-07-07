@@ -10,8 +10,6 @@ import net.minecraft.particles.ParticleTypes;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 
-import java.util.function.Consumer;
-
 /**
  * @author Lewin Gerber
  * @version 14.06.2020

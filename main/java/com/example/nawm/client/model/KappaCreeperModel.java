@@ -1,11 +1,9 @@
 package com.example.nawm.client.model;
 
 import com.google.common.collect.ImmutableList;
-import net.minecraft.client.renderer.entity.model.CreeperModel;
 import net.minecraft.client.renderer.entity.model.SegmentedModel;
 import net.minecraft.client.renderer.model.ModelRenderer;
 import net.minecraft.entity.Entity;
-import net.minecraft.entity.monster.CreeperEntity;
 import net.minecraft.util.math.MathHelper;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;

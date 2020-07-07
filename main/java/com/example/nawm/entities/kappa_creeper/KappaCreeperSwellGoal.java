@@ -2,7 +2,6 @@ package com.example.nawm.entities.kappa_creeper;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.monster.CreeperEntity;
 
 import java.util.EnumSet;
 

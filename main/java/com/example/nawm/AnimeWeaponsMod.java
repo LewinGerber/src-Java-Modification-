@@ -4,7 +4,6 @@ import com.example.nawm.init.EnchantmentInit;
 import com.example.nawm.init.ItemInit;
 import com.example.nawm.init.ModEntityTypes;
 import com.example.nawm.init.SoundInit;
-import com.example.nawm.objects.items.material.Azure;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;

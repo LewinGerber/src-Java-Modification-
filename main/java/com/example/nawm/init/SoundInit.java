@@ -1,7 +1,6 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
-import net.minecraft.client.audio.Sound;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.RegistryObject;
