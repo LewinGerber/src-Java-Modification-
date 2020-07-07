@@ -1,7 +1,6 @@
 package com.example.nawm.objects.items.armor;
 
 import com.example.nawm.AnimeWeaponsMod;
-import com.example.nawm.init.ItemInit;
 import com.example.nawm.objects.items.material.Azure;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;

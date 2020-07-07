@@ -1,7 +1,6 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
-import com.example.nawm.entities.kappa_creeper.KappaCreeperEntity;
 import com.example.nawm.objects.items.armor.azure.AzureBoots;
 import com.example.nawm.objects.items.armor.azure.AzureChestplate;
 import com.example.nawm.objects.items.armor.azure.AzureHelmet;
@@ -13,14 +12,9 @@ import com.example.nawm.objects.items.tools.AdventureSword;
 import com.example.nawm.objects.items.tools.AmaterasuBow;
 import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
-import net.minecraftforge.event.RegistryEvent;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.RegistryObject;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.ObjectHolder;
 
 /**
  * @author Lewin Gerber, Elias Mehran, Simon Tobler

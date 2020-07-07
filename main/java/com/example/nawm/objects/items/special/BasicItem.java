@@ -8,8 +8,6 @@ import net.minecraft.util.ActionResult;
 import net.minecraft.util.Hand;
 import net.minecraft.world.World;
 
-import java.util.function.Consumer;
-
 /**
  * @author Lewin Gerber
  * @version 14.06.2020
