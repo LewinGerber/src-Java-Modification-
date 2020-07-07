@@ -5,7 +5,6 @@ import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
-import net.minecraft.util.WeightedRandom;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -34,11 +33,11 @@ public class AnimeWeaponsMod {
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
 
-        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         SoundInit.SOUNDS.register(modEventBus);
         EnchantmentInit.ENCHANTMENTS.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
