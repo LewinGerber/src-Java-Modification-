@@ -1,5 +1,6 @@
 package com.example.nawm.enchantments;
 
+import com.example.nawm.init.ItemInit;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.entity.Entity;
@@ -15,7 +16,7 @@ import net.minecraft.potion.Effects;
 public class AmaterasuEnchantment extends Enchantment {
 
     public AmaterasuEnchantment() {
-        super(Enchantment.Rarity.VERY_RARE, EnchantmentType.CROSSBOW,
+        super(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("amaterasu_bow", item -> item.equals(ItemInit.AMATERASU_BOW.get())),
                 new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND});
     }
 
