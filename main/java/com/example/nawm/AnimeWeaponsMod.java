@@ -34,11 +34,11 @@ public class AnimeWeaponsMod {
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
 
-        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         SoundInit.SOUNDS.register(modEventBus);
         EnchantmentInit.ENCHANTMENTS.register(modEventBus);
         ItemInit.ITEMS.register(modEventBus);
         BlockInit.BLOCKS.register(modEventBus);
+        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
