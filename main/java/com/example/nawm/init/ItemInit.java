@@ -16,7 +16,10 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.ObjectHolder;
 
 /**
@@ -25,53 +28,33 @@ import net.minecraftforge.registries.ObjectHolder;
  * (n)AWM
  */
 
-@Mod.EventBusSubscriber(modid = AnimeWeaponsMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-@ObjectHolder(AnimeWeaponsMod.MOD_ID)
+
 public class ItemInit {
+    public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, AnimeWeaponsMod.MOD_ID);
 
-    public static final Item basic_item = null;
-    public static final Item ice_castle = null;
-    public static final Item adventure_sword = null;
-    public static final Item scythe = null;
-    public static final Item magic_mushroom = null;
-    public static final Item thunder = null;
-    public static final Item rain = null;
-    public static final Item wind = null;
-    public static final Item day = null;
-    public static final Item night = null;
-    public static final Item azure = null;
-    public static final Item azure_helmet = null;
-    public static final Item azure_chestplate = null;
-    public static final Item azure_leggings = null;
-    public static final Item azure_boots = null;
+    //misc
+    public static final RegistryObject<Item> BASIC_ITEM = ITEMS.register("basic_item", () -> new BasicItem());
+    public static final RegistryObject<Item> ICE_CASTLE = ITEMS.register("ice_castle", () -> new IceCastle());
 
-    @SubscribeEvent
-    public static void registerItems(final RegistryEvent.Register<Item> event) {
+    //misc -> AZURE
+    public static final RegistryObject<Item> THUNDER = ITEMS.register("thunder", () -> new Thunder());
+    public static final RegistryObject<Item> WIND = ITEMS.register("wind", () -> new Wind());
+    public static final RegistryObject<Item> RAIN = ITEMS.register("rain", () -> new Rain());
+    public static final RegistryObject<Item> DAY = ITEMS.register("day", () -> new Day());
+    public static final RegistryObject<Item> NIGHT = ITEMS.register("night", () -> new Night());
+    public static final RegistryObject<Item> AZURE = ITEMS.register("azure", () -> new Azure());
 
-        //items
-        event.getRegistry().register(new BasicItem().setRegistryName("basic_item"));
-        event.getRegistry().register(new IceCastle().setRegistryName("ice_castle"));
-        event.getRegistry().register(new Thunder().setRegistryName("thunder"));
-        event.getRegistry().register(new Rain().setRegistryName("rain"));
-        event.getRegistry().register(new Wind().setRegistryName("wind"));
-        event.getRegistry().register(new Day().setRegistryName("day"));
-        event.getRegistry().register(new Night().setRegistryName("night"));
-        event.getRegistry().register(new Azure().setRegistryName("azure"));
-        //event.getRegistry().register(new KappaCreeperSpawnEgg().setRegistryName("kappa_creeper_spawn_egg"));
-        //armor
-        event.getRegistry().register(new AzureHelmet().setRegistryName("azure_helmet"));
-        event.getRegistry().register(new AzureChestplate().setRegistryName("azure_chestplate"));
-        event.getRegistry().register(new AzureLeggings().setRegistryName("azure_leggings"));
-        event.getRegistry().register(new AzureBoots().setRegistryName("azure_boots"));
+    //food
+    public static final RegistryObject<Item> MAGIC_MUSHROOM = ITEMS.register("magic_mushroom", () -> new MagicMushroom());
 
-        //tools
-        event.getRegistry().register(new AdventureSword().setRegistryName("adventure_sword"));
-        event.getRegistry().register(new Scythe().setRegistryName("scythe"));
-        event.getRegistry().register(new AmaterasuBow().setRegistryName("amaterasu_bow"));
+    //armor
+    public static final RegistryObject<Item> AZURE_HELMET = ITEMS.register("azure_helmet", () -> new AzureHelmet());
+    public static final RegistryObject<Item> AZURE_CHESTPLATE = ITEMS.register("azure_chestplate", () -> new AzureChestplate());
+    public static final RegistryObject<Item> AZURE_LEGGINGS = ITEMS.register("azure_leggings", () -> new AzureLeggings());
+    public static final RegistryObject<Item> AZURE_BOOTS = ITEMS.register("azure_boots", () -> new AzureBoots());
 
-
-        //food
-        event.getRegistry().register(new MagicMushroom().setRegistryName("magic_mushroom"));
-
-    }
+    //tools
+    public static final RegistryObject<Item> ADVENTURE_SWORD = ITEMS.register("adventure_sword", () -> new AdventureSword());
+    public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe", () -> new Scythe());
+    public static final RegistryObject<Item> AMATERASU_BOW = ITEMS.register("amaterasu_bow", () -> new AmaterasuBow());
 }

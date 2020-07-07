@@ -1,6 +1,7 @@
 package com.example.nawm.objects.items.tools;
 
 import com.example.nawm.init.ItemInit;
+import com.example.nawm.objects.items.special.BasicItem;
 import net.minecraft.item.IItemTier;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.util.LazyValue;
@@ -18,7 +19,7 @@ public class ToolTier {
     public enum AdventureTier implements IItemTier {
 
         ADVENTURE(4, 2000, 15.0F, 7.0F, 420, () -> {
-            return Ingredient.fromItems(ItemInit.basic_item);
+            return Ingredient.fromItems(new BasicItem());
         });
 
         private final int harvestLevel;

@@ -2,6 +2,7 @@ package com.example.nawm.objects.items.armor;
 
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.init.ItemInit;
+import com.example.nawm.objects.items.material.Azure;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.item.IArmorMaterial;
 import net.minecraft.item.crafting.Ingredient;
@@ -16,7 +17,7 @@ import java.util.function.Supplier;
 public class ArmorBase {
     public enum ModArmorMaterial implements IArmorMaterial {
         AZURE(AnimeWeaponsMod.MOD_ID + ":azure", 5, new int[]{8, 11, 15, 9}, 420, SoundEvents.BLOCK_ANVIL_USE, 69.0f, () -> {
-            return Ingredient.fromItems(ItemInit.azure);
+            return Ingredient.fromItems(new Azure());
         });
 
         private static final int[] MAX_DAMAGE_ARRAY = new int[]{16, 16, 16, 16};

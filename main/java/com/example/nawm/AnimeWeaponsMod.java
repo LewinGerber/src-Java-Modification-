@@ -4,6 +4,7 @@ import com.example.nawm.init.EnchantmentInit;
 import com.example.nawm.init.ItemInit;
 import com.example.nawm.init.ModEntityTypes;
 import com.example.nawm.init.SoundInit;
+import com.example.nawm.objects.items.material.Azure;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,9 +32,10 @@ public class AnimeWeaponsMod {
         modEventBus.addListener(this::setup);
         modEventBus.addListener(this::doClientStuff);
 
+        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
         SoundInit.SOUNDS.register(modEventBus);
         EnchantmentInit.ENCHANTMENTS.register(modEventBus);
-        ModEntityTypes.ENTITY_TYPES.register(modEventBus);
+        ItemInit.ITEMS.register(modEventBus);
 
         instance = this;
         MinecraftForge.EVENT_BUS.register(this);
@@ -62,7 +64,7 @@ public class AnimeWeaponsMod {
 
         @Override
         public ItemStack createIcon() {
-            return new ItemStack(ItemInit.azure);
+            return new ItemStack(ItemInit.AZURE.get());
         }
     }
 }

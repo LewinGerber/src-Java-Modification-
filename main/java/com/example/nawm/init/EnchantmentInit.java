@@ -6,6 +6,7 @@ import com.example.nawm.enchantments.Amaterasu;
 import com.example.nawm.enchantments.ExplosionEnchantment;
 import com.example.nawm.enchantments.LifeSteal;
 import com.example.nawm.objects.items.tools.AmaterasuBow;
+import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.inventory.EquipmentSlotType;
@@ -26,7 +27,7 @@ public class EnchantmentInit {
     );
 
     public static final RegistryObject<Enchantment> LIFE_STEAL = ENCHANTMENTS.register("life_steal",
-            () -> new LifeSteal(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(ItemInit.scythe)),
+            () -> new LifeSteal(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(new Scythe())),
                     new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND})
     );
 }
