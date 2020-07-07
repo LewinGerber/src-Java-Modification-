@@ -12,10 +12,11 @@ import net.minecraft.potion.Effects;
  * @author Simon TObler
  * @version 22.06.2020
  */
-public class Amaterasu extends Enchantment {
+public class AmaterasuEnchantment extends Enchantment {
 
-    public Amaterasu(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType[] slots) {
-        super(rarityIn, typeIn, slots);
+    public AmaterasuEnchantment() {
+        super(Enchantment.Rarity.VERY_RARE, EnchantmentType.CROSSBOW,
+                new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND});
     }
 
     @Override

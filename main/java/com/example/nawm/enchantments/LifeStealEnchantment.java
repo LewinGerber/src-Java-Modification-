@@ -1,14 +1,16 @@
 package com.example.nawm.enchantments;
 
+import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
 
-public class LifeSteal extends Enchantment {
-    public LifeSteal(Rarity rarityIn, EnchantmentType typeIn, EquipmentSlotType[] slots) {
-        super(rarityIn, typeIn, slots);
+public class LifeStealEnchantment extends Enchantment {
+    public LifeStealEnchantment() {
+        super(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(new Scythe())),
+                new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND});
     }
 
     @Override
