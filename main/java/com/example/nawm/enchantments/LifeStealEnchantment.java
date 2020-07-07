@@ -1,5 +1,6 @@
 package com.example.nawm.enchantments;
 
+import com.example.nawm.init.ItemInit;
 import com.example.nawm.objects.items.tools.Scythe;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentType;
@@ -9,7 +10,7 @@ import net.minecraft.inventory.EquipmentSlotType;
 
 public class LifeStealEnchantment extends Enchantment {
     public LifeStealEnchantment() {
-        super(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(new Scythe())),
+        super(Enchantment.Rarity.VERY_RARE, EnchantmentType.create("scythe", item -> item.equals(ItemInit.SCYTHE.get())),
                 new EquipmentSlotType[]{EquipmentSlotType.CHEST.MAINHAND});
     }
 
