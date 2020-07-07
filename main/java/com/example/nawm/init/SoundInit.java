@@ -20,6 +20,6 @@ public class SoundInit {
     public static final RegistryObject<SoundEvent> KAPPA = SOUNDS.register("entity.kappa_creeper.kappa_creeper_entity.kappa",
             ()-> new SoundEvent(new ResourceLocation(AnimeWeaponsMod.MOD_ID, "entity.kappa_creeper.kappa_creeper_entity.kappa")));
 
-    public static final RegistryObject<SoundEvent> POOF = SOUNDS.register("entity.kappa_creeper.kappa_creeper_entity.poof",
-            ()-> new SoundEvent(new ResourceLocation(AnimeWeaponsMod.MOD_ID, "entity.kappa_creeper.kappa_creeper_entity.poof")));
+    public static final RegistryObject<SoundEvent> FLY = SOUNDS.register("item.basic_item.fly",
+            ()-> new SoundEvent(new ResourceLocation(AnimeWeaponsMod.MOD_ID, "item.basic_item.fly")));
 }

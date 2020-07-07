@@ -10,12 +10,12 @@
       ]
   },
 
-  "entity.kappa_creeper.kappa_creeper_entity.poof": {
-    "category": "entity",
-    "subtitle": "entity.kappa_creeper.kappa_creeper_entity.poof",
+  "item.basic_item.fly": {
+    "category": "item",
+    "subtitle": "item.basic_item.fly",
     "sounds": [
       {
-        "name": "nawm:entity/entity.kappa_creeper.kappa_creeper_entity.poof",
+        "name": "nawm:item/item.basic_item.fly",
         "stream": true
       }
     ]

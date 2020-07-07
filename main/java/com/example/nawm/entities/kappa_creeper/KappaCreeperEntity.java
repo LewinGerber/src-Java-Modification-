@@ -284,8 +284,4 @@ public class KappaCreeperEntity extends MonsterEntity implements IChargeableMob 
     protected SoundEvent getKappaSound() {
         return SoundInit.KAPPA.get();
     }
-
-    protected SoundEvent getPoofSound() {
-        return SoundInit.POOF.get();
-    }
 }
