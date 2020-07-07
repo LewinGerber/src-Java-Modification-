@@ -22,7 +22,6 @@ import net.minecraftforge.registries.ForgeRegistries;
  * (n)AWM
  */
 
-
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = new DeferredRegister<>(ForgeRegistries.ITEMS, AnimeWeaponsMod.MOD_ID);
 
