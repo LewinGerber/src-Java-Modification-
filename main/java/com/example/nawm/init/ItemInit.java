@@ -37,6 +37,8 @@ public class ItemInit {
     public static final RegistryObject<Item> RAIN = ITEMS.register("rain", () -> new Rain());
     public static final RegistryObject<Item> DAY = ITEMS.register("day", () -> new Day());
     public static final RegistryObject<Item> NIGHT = ITEMS.register("night", () -> new Night());
+
+    //material
     public static final RegistryObject<Item> AZURE = ITEMS.register("azure", () -> new Azure());
 
     //food
@@ -52,4 +54,7 @@ public class ItemInit {
     public static final RegistryObject<Item> ADVENTURE_SWORD = ITEMS.register("adventure_sword", () -> new AdventureSword());
     public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe", () -> new Scythe());
     public static final RegistryObject<Item> AMATERASU_BOW = ITEMS.register("amaterasu_bow", () -> new AmaterasuBow());
+
+    //seed
+    public static final RegistryObject<Item> MAGIC_MUSHROOM_SEED = ITEMS.register("magic_mushroom_seeds", () -> new MagicMushroomSeeds());
 }

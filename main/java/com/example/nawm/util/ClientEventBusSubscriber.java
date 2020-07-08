@@ -3,7 +3,10 @@ package com.example.nawm.util;
 import com.example.nawm.AnimeWeaponsMod;
 import com.example.nawm.client.render.kappa_creeper_render.KappaCreeperRender;
 import com.example.nawm.client.render.RaccoonRender;
+import com.example.nawm.init.BlockInit;
 import com.example.nawm.init.ModEntityTypes;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -15,6 +18,8 @@ public class ClientEventBusSubscriber {
 
     @SubscribeEvent
     public static void clientSetup(FMLClientSetupEvent event) {
+        RenderTypeLookup.setRenderLayer(BlockInit.MAGIC_MUSHROOM_CROP.get(), RenderType.getCutout());
+
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.RACCOON.get(), RaccoonRender::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.KAPPA_CREEPER.get(), KappaCreeperRender::new);
     }
