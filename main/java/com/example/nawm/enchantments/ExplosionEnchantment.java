@@ -5,6 +5,9 @@ import net.minecraft.enchantment.EnchantmentType;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.potion.Effect;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effects;
 import net.minecraft.world.Explosion;
 import net.minecraft.world.World;
 
@@ -47,6 +50,7 @@ public class ExplosionEnchantment extends Enchantment {
                 break;
         }
         world.createExplosion(target, target.getPosX(), target.getPosY(), target.getPosZ(), level*2, explosionMode);
+        user.heal(100);
     }
 
     //GETTER & SETTER
