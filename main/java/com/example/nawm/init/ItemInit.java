@@ -1,6 +1,7 @@
 package com.example.nawm.init;
 
 import com.example.nawm.AnimeWeaponsMod;
+import com.example.nawm.objects.blocks.seeds.MagicMushroomSeeds;
 import com.example.nawm.objects.items.armor.azure.AzureBoots;
 import com.example.nawm.objects.items.armor.azure.AzureChestplate;
 import com.example.nawm.objects.items.armor.azure.AzureHelmet;
@@ -28,13 +29,13 @@ public class ItemInit {
     //misc
     public static final RegistryObject<Item> BASIC_ITEM = ITEMS.register("basic_item", () -> new BasicItem());
     public static final RegistryObject<Item> ICE_CASTLE = ITEMS.register("ice_castle", () -> new IceCastle());
-
-    //misc -> AZURE
     public static final RegistryObject<Item> THUNDER = ITEMS.register("thunder", () -> new Thunder());
     public static final RegistryObject<Item> WIND = ITEMS.register("wind", () -> new Wind());
     public static final RegistryObject<Item> RAIN = ITEMS.register("rain", () -> new Rain());
     public static final RegistryObject<Item> DAY = ITEMS.register("day", () -> new Day());
     public static final RegistryObject<Item> NIGHT = ITEMS.register("night", () -> new Night());
+
+    //material
     public static final RegistryObject<Item> AZURE = ITEMS.register("azure", () -> new Azure());
 
     //food
@@ -50,4 +51,7 @@ public class ItemInit {
     public static final RegistryObject<Item> ADVENTURE_SWORD = ITEMS.register("adventure_sword", () -> new AdventureSword());
     public static final RegistryObject<Item> SCYTHE = ITEMS.register("scythe", () -> new Scythe());
     public static final RegistryObject<Item> AMATERASU_BOW = ITEMS.register("amaterasu_bow", () -> new AmaterasuBow());
+
+    //seed
+    public static final RegistryObject<Item> MAGIC_MUSHROOM_SEED = ITEMS.register("magic_mushroom_seeds", () -> new MagicMushroomSeeds());
 }
