@@ -49,8 +49,9 @@ public class ExplosionEnchantment extends Enchantment {
                 explosionMode = Explosion.Mode.DESTROY;
                 break;
         }
+        user.setInvulnerable(true);
         world.createExplosion(target, target.getPosX(), target.getPosY(), target.getPosZ(), level*2, explosionMode);
-        user.heal(100);
+        user.setInvulnerable(false);
     }
 
     //GETTER & SETTER
