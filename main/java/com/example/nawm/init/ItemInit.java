@@ -29,6 +29,7 @@ public class ItemInit {
     public static final RegistryObject<Item> BASIC_ITEM = ITEMS.register("basic_item", () -> new BasicItem());
     public static final RegistryObject<Item> ICE_CASTLE = ITEMS.register("ice_castle", () -> new IceCastle());
     public static final RegistryObject<Item> CLOAKING_DEVICE = ITEMS.register("cloaking_device", () -> new CloakingDevice());
+    public static final RegistryObject<Item> RADAR = ITEMS.register("radar", () -> new Radar());
 
     //misc -> AZURE
     public static final RegistryObject<Item> THUNDER = ITEMS.register("thunder", () -> new Thunder());

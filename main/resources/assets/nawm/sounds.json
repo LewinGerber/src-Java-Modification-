@@ -30,5 +30,17 @@
         "stream": true
       }
     ]
+  },
+
+  "item.radar.ping": {
+    "category": "item",
+    "subtitle": "item.radar.ping",
+    "sounds": [
+      {
+        "name": "nawm:item/item.radar.ping",
+        "stream": true
+      }
+    ]
   }
+
 }
